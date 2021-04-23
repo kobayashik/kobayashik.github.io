@@ -31,7 +31,7 @@ main {
   border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr auto;
-  box-shadow: 20px 20px 60px #e3e3e3, -20px -20px 60px #f0f0f0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 a {
@@ -81,13 +81,13 @@ p {
   width: 2rem;
 }
 
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
   body {
     height: 100%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   body {
     background: rgb(239, 241, 247);
   }
