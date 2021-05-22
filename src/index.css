@@ -43,7 +43,6 @@ a img {
 
 a:hover img {
   opacity: 1;
-  margin-bottom: 4px;
 }
 
 a:visited {
