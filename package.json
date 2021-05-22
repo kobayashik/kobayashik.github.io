@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "parcel src/index.html --no-source-maps",
     "build": "parcel build src/index.html --no-source-maps",
-    "postbuild": "cp src/CNAME dist && cp src/robots.txt dist",
-    "publish": "git branch -D master & git subtree split --prefix dist -b master && git push -f origin master:master"
+    "postbuild": "cp src/CNAME dist"
   },
   "repository": {
     "type": "git",
