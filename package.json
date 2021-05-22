@@ -1,0 +1,26 @@
+{
+  "name": "kobayashik.github.io",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html --no-source-maps",
+    "build": "parcel build src/index.html --no-source-maps",
+    "postbuild": "cp src/CNAME dist && cp src/robots.txt dist",
+    "publish": "git branch -D master & git subtree split --prefix dist -b master && git push -f origin master:master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobayashik/kobayashik.github.io.git"
+  },
+  "author": "Kevin Kobayashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kobayashik/kobayashik.github.io/issues"
+  },
+  "homepage": "https://kevinkobayashi.dev",
+  "description": "Personal Website",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "private": true
+}

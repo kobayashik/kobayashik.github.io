@@ -56,7 +56,7 @@ p {
   line-height: 1.3rem;
 }
 
-.description {
+.card {
   display: grid;
   grid-template-rows: 165px 230px 52px;
   background-color: white;
