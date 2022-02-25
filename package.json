@@ -1,11 +1,13 @@
 {
   "name": "kobayashik.github.io",
+  "private": true,
   "version": "1.0.0",
   "main": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html --no-source-maps",
-    "build": "parcel build src/index.html --no-source-maps",
-    "postbuild": "cp src/CNAME dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write src/"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,7 @@
   "homepage": "https://kevinkobayashi.dev",
   "description": "Personal Website",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
-  "private": true
+    "vite": "^2.8.0",
+    "prettier": "^2.5.1"
+  }
 }
