@@ -1,23 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  transform: scale(0.9);
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(239, 241, 247);
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: rgb(239 241 247);
   background: linear-gradient(
     25deg,
-    rgba(239, 241, 247, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgb(239 241 247 / 100%) 0%,
+    rgb(255 255 255 / 100%) 100%
   );
+  transform: scale(0.9);
 }
 
 h1 {
@@ -25,19 +22,22 @@ h1 {
   font-size: 4rem;
   line-height: 3.6rem;
   font-weight: 700;
+  margin: 0;
 }
 
 main {
+  display: flex;
   overflow: hidden;
   border-radius: 15px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+}
+
+a {
+  text-decoration: none;
 }
 
 a img {
   opacity: 0.6;
-  text-decoration: none;
   transition: 0.45s ease;
 }
 
@@ -51,16 +51,19 @@ a:visited {
 
 p {
   max-width: 30rem;
-  margin: 1em 0;
   line-height: 1.3rem;
+}
+
+picture {
+  background-color: white;
 }
 
 .card {
   display: grid;
-  grid-template-rows: 165px 230px 52px;
+  grid-template-rows: 150px 220px 50px;
   background-color: white;
   color: #818181;
-  padding: 100px 100px 100px;
+  padding: 85px;
 }
 
 .portrait {
@@ -70,10 +73,9 @@ p {
 }
 
 .social {
-  max-width: 7.5rem;
-  justify-content: space-between;
   display: flex;
   align-items: flex-end;
+  gap: 12px;
 }
 
 .social img {
@@ -81,78 +83,58 @@ p {
   width: 2rem;
 }
 
-@keyframes fadeLeft {
+@keyframes fade {
   from {
     transform: translateX(-20px);
     opacity: 0;
-    /* transform: -20px;; */
   }
-  
+
   to {
-    transform: translateX(0px);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
-.fade-left {
-  width: 100%;
+.fade {
   opacity: 0;
-  animation-name: fadeLeft;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation: fade 1.2s ease-out 1 forwards;
 }
 
-.fade-left:nth-child(1) {
+.fade:nth-child(1) {
   animation-delay: 0.2s;
 }
 
-.fade-left:nth-child(2) {
+.fade:nth-child(2) {
   animation-delay: 0.7s;
 }
 
-.fade-left:nth-child(3) {
+.fade:nth-child(3) {
   animation-delay: 1.2s;
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-  body {
-    height: 100%;
-  }
 }
 
 @media (max-width: 1024px) {
   body {
-    background: rgb(239, 241, 247);
+    background: rgb(239 241 247);
   }
 
   main {
-    margin: 1rem;
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  aside {
-    background-color: white;
+    margin: 0.5rem;
   }
 
   h1 {
     font-size: 3rem;
+    line-height: 2.6rem;
   }
 
-  a:hover img {
-    margin: 0;
-  }
-
-  .description {
-    padding: 1rem;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
+  .card {
+    grid-template-rows: none;
+    gap: 10px;
+    padding: 50px;
   }
 
   .portrait {
     width: 100%;
-    max-height: 30rem;
   }
 }
