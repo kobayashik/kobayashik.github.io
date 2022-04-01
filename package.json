@@ -22,6 +22,6 @@
   "description": "Personal Website",
   "devDependencies": {
     "vite": "^2.8.5",
-    "prettier": "^2.5.1"
+    "prettier": "^2.6.1"
   }
 }
