@@ -8,49 +8,79 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/assets/index-02e2d19f.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="/assets/index-c7ae6cc7.css">
   </head>
   <body>
     <main role="main">
-      <section class="card">
-        <hgroup class="fade">
-          <h1>Kevin</h1>
-          <h1>Kobayashi</h1>
-        </hgroup>
+      <div class="card">
+        <div class="card__content">
+          <header class="fade-in card__header">
+            <h1>
+              Kevin <br />
+              Kobayashi
+            </h1>
+          </header>
 
-        <section class="fade">
-          <p>Hi there 👋,</p>
-          <p>
-            I'm a Front-End developer who loves learning and exploring new
-            technologies.
-          </p>
+          <section class="fade-in card__body">
+            <p>Hi there 👋,</p>
 
-          <p>
-            I'm always up for a challenge, So whether it's web development, game
-            design, or something else entirely, I'm always willing to try
-            something new.
-          </p>
-        </section>
+            <p>
+              I'm a Front-End developer who loves learning and creating amazing
+              experiences.
+            </p>
 
-        <section class="social fade">
-          <a href="https://github.com/kobayashik" rel="external">
-            <img alt="github" src="/github.svg" />
-          </a>
-          <a href="https://ca.linkedin.com/in/kevinkobayashi" rel="external">
-            <img alt="linkedin" src="/linkedin.svg" />
-          </a>
-          <a href="mailto:hello@kevinkobayashi.dev" rel="author">
-            <img alt="email" src="/email.svg" />
-          </a>
-        </section>
-      </section>
-      <picture>
-        <!-- todo: be less ugly -->
-        <img alt="Kevin Kobayashi" class="portrait" src="/6517349.jpeg" />
-      </picture>
+            <p>
+              Whether it's building web applications, experimenting with new
+              technologies, or venturing into uncharted territory, I love
+              pushing my skills to the limit and seeing what incredible things I
+              can create.
+            </p>
+
+            <p>Let's build something great together!</p>
+          </section>
+
+          <footer class="fade-in card__footer">
+            <a
+              class="social-link"
+              href="https://github.com/kobayashik"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="github" src="/github.svg" />
+            </a>
+            <a
+              class="social-link"
+              href="https://ca.linkedin.com/in/kevinkobayashi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="linkedin" src="/linkedin.svg" />
+            </a>
+            <a
+              class="social-link"
+              href="mailto:hello@kevinkobayashi.dev"
+              rel="author"
+            >
+              <img alt="email" src="/email.svg" />
+            </a>
+          </footer>
+        </div>
+
+        <figure class="card__figure">
+          <!-- todo: be less ugly -->
+          <img
+            alt="Kevin Kobayashi"
+            class="profile-image"
+            src="/profile-image.jpg"
+          />
+        </figure>
+      </div>
     </main>
   </body>
 </html>
