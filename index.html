@@ -18,20 +18,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <link rel="stylesheet" href="/assets/index-69d36aae.css">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self';"
+    />
+    <link rel="stylesheet" href="/assets/index-74cbbad2.css">
   </head>
   <body>
-    <main role="main">
-      <div class="card">
+    <main>
+      <article class="card">
         <div class="card__content">
-          <header class="fade-in card__header">
+          <header class="card__header fade-in">
             <h1>
               Kevin <br />
               Kobayashi
             </h1>
           </header>
 
-          <section class="fade-in card__body">
+          <section class="card__body fade-in">
             <p>Hi there 👋,</p>
 
             <p>
@@ -49,29 +53,32 @@
             <p>Let's build something great together!</p>
           </section>
 
-          <footer class="fade-in card__footer">
+          <footer class="card__footer fade-in">
             <a
               class="social-link"
               href="https://github.com/kobayashik"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Kevin's GitHub profile"
             >
-              <img alt="github" src="/github.svg" />
+              <img alt="GitHub logo" src="/github.svg" />
             </a>
             <a
               class="social-link"
               href="https://ca.linkedin.com/in/kevinkobayashi"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Kevin's LinkedIn profile"
             >
-              <img alt="linkedin" src="/linkedin.svg" />
+              <img alt="LinkedIn logo" src="/linkedin.svg" />
             </a>
             <a
               class="social-link"
               href="mailto:hello@kevinkobayashi.dev"
               rel="author"
+              aria-label="Send an email to Kevin Kobayashi"
             >
-              <img alt="email" src="/email.svg" />
+              <img alt="Email icon" src="/email.svg" />
             </a>
           </footer>
         </div>
@@ -81,10 +88,10 @@
           <img
             alt="Kevin Kobayashi"
             class="profile-image"
-            src="/profile-image.jpg"
+            src="/profile-image.webp"
           />
         </figure>
-      </div>
+      </article>
     </main>
   </body>
 </html>
