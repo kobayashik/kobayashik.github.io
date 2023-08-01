@@ -21,7 +21,7 @@
   "homepage": "https://kevinkobayashi.dev",
   "description": "Personal Website",
   "devDependencies": {
-    "vite": "^4.2.3",
+    "vite": "^4.4.7",
     "prettier": "^2.8.8"
   }
 }
